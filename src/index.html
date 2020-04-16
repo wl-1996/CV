@@ -96,7 +96,7 @@
             right: 0;
         }
 
-        .bio a{
+        .bio a {
             border-bottom: none;
             color: #666666;
         }
@@ -156,11 +156,25 @@
 
         .projects > ol > li > header {
             display: flex;
-            justify-content: space-between;
+            /*justify-content: space-between;*/
         }
 
         .projects > ol > li h3 {
             display: inline-block;
+        }
+        .projects .QR-code ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .projects .QR-code ul li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects .QR-code ul li img{
+            width: 150px;
         }
     </style>
 
@@ -216,13 +230,14 @@
         <div class="wrapper">
             <div id="skills"></div>
             <ul>
-                <li>熟悉HTML语义化、熟练掌握 <strong>HTML5</strong> 和 <strong>CSS3</strong> 的使用。</li>
-                <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong>。</li>
-                <li>熟练掌握JS基本原理，熟悉<strong>闭包</strong>、<strong>原型链</strong>等概念。</li>
+                <li>熟悉HTML语义化、熟练掌握 <strong>HTML5</strong> 、 <strong>CSS3</strong> 和 <strong>JS</strong> 的使用。</li>
+                <li>熟悉页面制作技巧，熟练使用 <strong>flex</strong> 布局，能将设计稿<strong>完美还原</strong>。</li>
+                <li>熟练掌握JS基本原理，熟悉<strong>闭包 / 原型链 / 异步 / 跨域 / 函数节流 / 函数防抖</strong>等概念。</li>
                 <li>熟悉<strong>前后端分离</strong>技术，包括 <strong>AJAX</strong>、<strong>跨域</strong>、前端路由、Cookie、Session 等。</li>
                 <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等。</li>
                 <!--<li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>-->
-                <li>熟悉 <strong>ES6</strong>，包括 let / const / <strong>箭头函数</strong> / <strong>Promise</strong> / 析构赋值等。</li>
+                <li>熟悉 <strong>ES6</strong>，包括 let / const / <strong>箭头函数</strong> / <strong>Promise</strong> / 析构赋值等。
+                </li>
                 <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的。</li>
                 <li>了解 <strong>Webpack 的配置和优化</strong>，熟悉基本 <strong>loader</strong> 和 <strong>plugin</strong> 的使用。</li>
                 <li>熟练使用 <strong> Git / Github / Yarn / Parcel</strong>。</li>
@@ -276,10 +291,6 @@
             <li>
                 <header>
                     <h3>点滴记账</h3>
-                    <span>
-                      <a href="https://github.com/wl-1996/accounting-items-website">源码链接</a>
-                      <a href="https://wangkuo.monster/accounting-items-website/#/money">项目预览</a>
-                    </span>
                 </header>
                 <p>
                     一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Vuex</strong> /
@@ -295,45 +306,83 @@
                         href="https://wangkuo.monster/">本人的博客</a>。
                     源代码几乎完全使用 <strong>TypeScript</strong> 实现，用到了 <strong>装饰器</strong> 等语法。
                 </p>
+                <p>技术栈：Vue / TypeScript / Vuex / VueRouter / ES6 / Parcel / Webpack / SCSS / yarn </p>
+                <div class="QR-code">
+                    <ul>
+                        <li>
+                            <img src="./images/accounting-items-sourceCode.png" alt="">
+                            <a href="https://github.com/wl-1996/accounting-items-website">源码链接</a>
+                        </li>
+                        <li>
+                            <img src="./images/accounting-items.png" alt="">
+                            <a href="https://wangkuo.monster/accounting-items-website/#/money">项目预览</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li>
+            <li class="page2">
                 <header>
                     <h3>Google导航</h3>
-                    <span>
-                      <a href="https://github.com/wl-1996/google-nav">源码链接</a>
-                      <a href="https://wangkuo.monster/google-nav/dist/index.html">项目预览</a>
-                    </span>
                 </header>
                 <p>这是我仿照Google首页做的一个导航站点，通过<strong> jQuery </strong>实现网站添加、网站删除、搜索等常见功能。</p>
+                <p>技术栈：HTML5 / CSS3 / jQuery</p>
+                <div class="QR-code">
+                    <ul>
+                        <li>
+                            <img src="./images/google-nav-sourceCode.png" alt="">
+                            <a href="https://github.com/wl-1996/google-nav">源码链接</a>
+                        </li>
+                        <li>
+                            <img src="./images/google-nav.png" alt="">
+                            <a href="https://wangkuo.monster/google-nav/dist/index.html">项目预览</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <header>
                     <h3>动态皮卡丘</h3>
-                    <span>
-                      <a href="https://github.com/wl-1996/Pikachu">源码链接</a>
-                      <a href="https://wangkuo.monster/Pikachu/dist/index.html">项目预览</a>
-                    </span>
                 </header>
                 <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个作品,用到了<strong>面向对象</strong>编程的概念，通过<strong>媒体查询</strong>适配手机端。
                 </p>
+                <p>技术栈：HTML5 / CSS3 / JavaScript</p>
+                <div class="QR-code">
+                    <ul>
+                        <li>
+                            <img src="./images/Pikachu-sourceCode.png" alt="">
+                            <a href="https://github.com/wl-1996/Pikachu">源码链接</a>
+                        </li>
+                        <li>
+                            <img src="./images/Pikachu.png" alt="">
+                            <a href="https://wangkuo.monster/Pikachu/dist/index.html">项目预览</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <header>
                     <h3>简易画板</h3>
-                    <span>
-                      <a href="https://github.com/wl-1996/canvas">源码链接</a>
-                      <a href="https://wangkuo.monster/canvas/index.html">项目预览</a>
-                    </span>
                 </header>
                 <p>我在学习 <strong>Canvas</strong> 时做的一个小作品。</p>
+                <div class="QR-code">
+                    <ul>
+                        <li>
+                            <img src="./images/canvas-sourceCode.png" alt="">
+                            <a href="https://github.com/wl-1996/canvas">源码链接</a>
+                        </li>
+                        <li>
+                            <img src="./images/canvas.png" alt="">
+                            <a href="https://wangkuo.monster/canvas/dist/index.html">项目预览</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ol>
     </section>
 
 
-
     <section class="others">
-        <h2  class="page2">其他链接</h2>
+        <h2>其他链接</h2>
         <ul>
             <li><a href="https://wangkuo.monster/">我的博客</a>，目前已有 40 篇技术文章</li>
             <li><a href="https://github.com/wl-1996">我的 GitHub</a>，过去半年有 349 次提交</li>
