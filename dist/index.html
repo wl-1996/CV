@@ -152,18 +152,38 @@
         .projects > ol > li h3 {
             display: inline-block;
         }
-        .projects .QR-code ul{
+
+        .projects .QR-code ul {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
-        .projects .QR-code ul li{
+
+        .projects .QR-code ul li {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .projects .QR-code ul li img{
+
+        .projects .QR-code ul li img {
+            width: 150px;
+        }</style>
+
+    <style>.others .QR-code {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .others .QR-code li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .others .QR-code li img {
             width: 150px;
         }</style>
 
@@ -200,7 +220,7 @@
             男 | 23岁 | 前端开发工程师 | 杭州
         </p>
         <p>
-            手机：<a href="18790342745">18790342745</a> | 微信：KI199603250424 | 邮箱：<a href="mailto:741341649@qq.com">741341649@qq.com</a>
+            手机：<a href="tel:18790342745">18790342745</a> | 微信：KI199603250424 | 邮箱：<a href="mailto:741341649@qq.com">741341649@qq.com</a>
         </p>
     </section>
 
@@ -281,7 +301,7 @@
                 </header>
                 <p>
                     一个基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Vuex</strong> /
-                    <strong>VueRouter</strong>的移动端单页面应用。
+                    <strong>VueRouter</strong>的移动端单页面应用，适配手机端。
                 </p>
                 <p>
                     这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账。
@@ -296,7 +316,7 @@
                 <div class="QR-code">
                     <ul>
                         <li>
-                            <img src="accounting-items-sourceCode.1aaabcdb.png" alt="">
+                            <img src="accounting-items-sourceCode.a69f56eb.png" alt="">
                             <a href="https://github.com/wl-1996/accounting-items">源码链接</a>
                         </li>
                         <li>
@@ -310,8 +330,8 @@
                 <header>
                     <h3>Google导航</h3>
                 </header>
-                <p>这是我仿照Google首页做的一个导航站点，通过<strong> jQuery </strong>实现网站添加、网站删除、搜索等常见功能。</p>
-                <p>技术栈：HTML5 / CSS3 / jQuery</p>
+                <p>这是我仿照Google首页做的一个导航站点，通过<strong> jQuery </strong>实现网站添加、网站删除、搜索等常见功能，适配手机端。</p>
+                <p>技术栈：HTML5 / CSS3 / jQuery / LocalStorage / SVG / Media</p>
                 <div class="QR-code">
                     <ul>
                         <li>
@@ -331,7 +351,7 @@
                 </header>
                 <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个作品,用到了<strong>面向对象</strong>编程的概念，通过<strong>媒体查询</strong>适配手机端。
                 </p>
-                <p>技术栈：HTML5 / CSS3 / JavaScript</p>
+                <p>技术栈：HTML5 / CSS3 / JavaScript / Media</p>
                 <div class="QR-code">
                     <ul>
                         <li>
@@ -349,7 +369,8 @@
                 <header>
                     <h3>简易画板</h3>
                 </header>
-                <p>我在学习 <strong>Canvas</strong> 时做的一个小作品。</p>
+                <p>我在学习 <strong>Canvas</strong> 时做的一个小作品，适配手机端。</p>
+                <p>技术栈：HTML5 / CSS3 / JavaScript / Canvas</p>
                 <div class="QR-code">
                     <ul>
                         <li>
@@ -369,9 +390,21 @@
 
     <section class="others">
         <h2>其他链接</h2>
-        <ul>
-            <li><a href="https://wangkuo.monster/">我的博客</a>，目前已有 40 篇技术文章</li>
-            <li><a href="https://github.com/wl-1996">我的 GitHub</a>，过去半年有 349 次提交</li>
+        <ul class="QR-code">
+            <li>
+                <img src="blog.31110175.png" alt="">
+                <div>
+                    <a href="https://wangkuo.monster/">我的博客</a>
+                    <span>，目前已有 40 篇技术文章</span>
+                </div>
+            </li>
+            <li>
+                <img src="github.af26d3ab.png" alt="">
+                <div>
+                    <a href="https://github.com/wl-1996">我的 GitHub</a>
+                    <span>，过去半年有 366 次提交</span>
+                </div>
+            </li>
         </ul>
     </section>
 
